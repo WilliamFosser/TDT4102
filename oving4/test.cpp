@@ -2,6 +2,7 @@
 #include "test.h"
 #include "utilities.h"
 #include "mastermind.h"
+#
 
 void testMenu() {
     while (true) {
@@ -17,22 +18,32 @@ void testMenu() {
         case 1:
             testCallByValue();
             break;
-        case 2:
+        case 2: 
+            testCallByReference();
+            break;
+        case 3:
             testString();
             break; 
-        case 3: 
+        case 4: 
             if (countChar("Hei Hei Hei", 'H') == 3) {
                 cout << "Test vellykket!" << endl;
             }
             break; 
-        case 4:
-            int rightGuess = checkCharacters("heiheihei", "hel");
-            cout << "Antall riktige bokstaver: " << rightGuess << endl;
+        case 5:
+            cout << "Antall riktige bokstaver og posisjoner: " << checkCharactersAndPosition("ABC", "CBA") << endl;
             break;
+        case 6:
+            cout << "Resulatat: " << checkCharacters("ABC", "CBA") << endl;
+            break;
+        case 7:
+            playMastermind();
+            break;
+        
         default: 
             return;
             
         }
+        cout << "\n";
     }
 }
 

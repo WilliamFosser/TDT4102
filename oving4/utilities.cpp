@@ -59,7 +59,7 @@ string readInputToString(int stringLength, char lowerCharLimit, char upperCharLi
             && inputChar <= static_cast<int>(upperCharLimit)) {
                 readInString += toupper(inputChar);
         } else {
-                cout << "Bokstaven er ikke gyldig. Prøv igjen: " << endl; 
+            cout << "Bokstaven er ikke gyldig. Prøv igjen: " << endl; 
         }
     }
     return readInString;

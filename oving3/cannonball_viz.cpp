@@ -35,3 +35,4 @@ void cannonBallViz(double targetPosition, int fieldLength, double initVelocityX,
 	std::cout << std::endl << "Close the window to continue." << std::endl;
 	window.wait_for_close();
 }
+
