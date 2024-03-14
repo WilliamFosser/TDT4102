@@ -2,13 +2,20 @@
 #include "test.h"
 #include "utilities.h"
 #include "mastermind.h"
-#
+#include "masterVisual.h"
 
 void testMenu() {
     while (true) {
     cout << "Velg funksjon for testing:\n"
          << "0)\tAvslutt\n"
-         << "1)\tTester funksjonen: testCallByValue()\n";
+         << "1)\tTester funksjonen: testCallByValue()\n"
+         << "2)\tTester funksjonen: testCallByReference()\n"
+         << "3)\tTester funksjonen: testString()\n"
+         << "4)\tTester funksjonen: countChar()\n"
+         << "5)\tTester funksjonen: checkCharactersAndPosition()\n"
+         << "6)\tTester funksjonen: checkCharacters()\n"
+         << "7)\tSpill mastermind i terminalen\n"
+         << "8)\tSpill mastermind med grafikk\n";
 
         int menuChoice;
         cin >> menuChoice;
@@ -38,6 +45,9 @@ void testMenu() {
         case 7:
             playMastermind();
             break;
+        case 8: 
+            playMastermindVisual();
+            break; 
         
         default: 
             return;

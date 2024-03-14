@@ -11,7 +11,7 @@ void playMastermind() {
 
     string code = randomizeString(stringSize, 'A', 'A' + (letterCount-1));
     string guess; 
-    int maxGuesses = 10;
+    int maxGuesses = 6;
 
     int rightCharAndPosition = 0;
     int i = 0;
